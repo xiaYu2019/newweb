@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />	<!-- 初始样式 -->
+		<link rel="stylesheet" type="text/css" href="../css/footer.css"/> <!-- 尾部样式 -->
+	</head>
+	<body>
+		<footer class="footer_xy">
+			<div class="synopsis_xy">
+				<div class="group_xy">
+					<h3>卓动故事</h3>
+					<a href="">公司简介</a>
+					<a href="">卓动团队</a>
+					<a href="">卓动荣誉</a>
+					<a href="">发展历程</a>
+				</div>
+				<div class="group_xy">
+					<h3>卓动业务</h3>
+					<a href="">大数据业务</a>
+					<a href="">软件服务</a>
+					<a href="">游戏业务</a>
+					<a href="">企业服务</a>
+					<a href="">电商应用</a>
+				</div>
+				<div class="group_xy">
+					<h3>新闻资讯</h3>
+					<a href="">公司资讯</a>
+					<a href="">活动资讯</a>
+					<a href="">培训资讯</a>
+				</div>
+				<div class="group_xy">
+					<h3>加入我们</h3>
+					<a href="">社会招聘</a>
+					<a href="">校园招聘</a>
+					<a href="">福利待遇</a>
+					<a href="">培训发展</a>
+				</div>
+				<div class="group_xy">
+					<h3>成为商业伙伴</h3>
+					<a href="">BD@JODOINC.COM</a>
+					<div>
+						<span>关注卓动科技</span>
+						<img  class="weChat" src="../img/d9b6fc5.png" alt="">
+					</div>
+					<p>招聘: <a href="">HR@JODOINC.COM</a> </p>
+					<p>合作: <a href="">OVERSEA@JODOINC.COM</a> </p>
+				</div>
+			</div>
+			<div class="floor_xy">
+				<div>
+					<a href=""><span>法律声明</span></a>
+					<span>|</span>
+					<a href=""><span>隐私策略</span></a>
+					<span>|</span>
+					<a href=""><span>粤ICP备12082196号</span></a>
+				</div>
+				<div>
+					<span>COPYRIGHT</span> 
+					<span>2021 </span>
+					<span>©</span>
+					<span>广州卓动信息科技有限公司.</span> 
+					<span>ALL RIGHTS</span>
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			let html = document.getElementsByTagName("html")[0];
+		
+			let fs = window.innerWidth;
+			html.style.fontSize = fs * 100 / 1920 + "px";
+			window.onresize = function() {
+				let fs = window.innerWidth;
+				html.style.fontSize = fs * 100 / 1920 + "px";
+				// html.style.fontSize = ((fs*100/1920>39)?(fs*100/1920):39)+"px"
+				console.log(((fs * 100 / 1920 > 39) ? (fs * 100 / 1920) : 39))
+			}
+			
+			
+			let weChat = document.getElementsByClassName("weChat")[0]
+			weChat.onmouseover = ()=>{
+				weChat.parentNode.classList.add("code")
+			}
+			weChat.onmouseout = ()=>{
+				weChat.parentNode.classList.remove("code")
+			}
+		</script>
+	</body>
+</html>

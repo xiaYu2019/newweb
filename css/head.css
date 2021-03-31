@@ -1,0 +1,135 @@
+body{
+	background-color: #F7F7F7;
+}
+.frame_xy {
+	width: 100%;
+	font-size: 0.24rem;
+	color: white;
+	background-color: #005fd5;
+	position: fixed;
+	 z-index: 999;
+}
+
+.box_xy {
+	width: 90%;
+	height: 0.73rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_xy .log_xy {
+	height: 100%;
+	line-height: 0.73rem;
+}
+
+.box_xy .log_xy h1 {
+	font-weight: 700;
+}
+
+.box_xy .log_xy h1 img {
+	width: 1.6rem;
+	font: 0;
+	line-height: 100%;
+	font-size: 0;
+	vertical-align:middle;
+}
+
+.box_xy .nav_xy {
+	height: 100%;
+	line-height: 0.73rem;
+	color: #abc6e6;
+	font-size: 0.2rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.box_xy .nav_xy .kind_xy {
+	/* width: 80%; */
+	display: flex;
+	justify-content: space-between;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy {
+	padding: 0 0.1rem;
+	transition: all 0.3s;
+
+}
+
+.box_xy .nav_xy .kind_xy .item_xy:hover {
+	border-bottom: 0.03rem solid #FFFFFF;
+	color: #FFFFFF;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy:hover>a {
+	color: #FFFFFF;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy>a {
+	display: inline-block;
+	color: #abc6e6;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy .classify_xy {
+	z-index: 999;
+	display: none;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0.7rem;
+	transition: all 0.3s;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy:hover .classify_xy {
+	display: block;
+	background-color: #FFF;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy .classify_xy ul {
+	display: flex;
+	justify-content: center;
+	align-items: space-around;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy .classify_xy ul li {
+	margin-left: 0.35rem;
+
+}
+
+.box_xy .nav_xy .kind_xy .item_xy .classify_xy ul li a {
+	display: inline-block;
+	color: #737373;
+}
+
+.box_xy .nav_xy .kind_xy .item_xy .classify_xy ul li a:hover {
+	color: #005FD5
+}
+
+.box_xy .eWeChat_xy{
+	width: 0.5rem;
+	background-image: url(../img/d9b6fc5.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	position: relative;
+}
+.box_xy .eWeChat_xy>.code{
+	position: absolute;
+	top: 88%;
+	left: -0.75rem;
+	font-size: 0.14rem;
+	box-sizing: border-box;
+	width: 2rem;
+	padding-top: 2rem;
+	background-image: url(../img/qrcode.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+	background-color: #fff;
+	color: #000000;
+	text-align: center;
+	display: none;
+}
+.box_xy .eWeChat_xy:hover .code{
+	display: block;
+}

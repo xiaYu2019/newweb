@@ -1,0 +1,61 @@
+.bg{
+	box-sizing: border-box;
+	height: 9rem;
+	padding-top: 3rem;
+	background-image: url(../img/bgd.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FFFFFF;
+	text-align: center;
+}
+.bg .caption{
+	font-size: 0.7rem;
+	font-weight: bold;
+	padding-bottom: 0.2rem;
+}
+.bg .describe{
+	font-size: 0.30rem;
+	word-break: break-all;
+}
+.bg img{
+	display: inline-block;
+	padding-top: 3rem;
+	width: 0.25rem;
+	height: 0.44rem;
+}
+.plight {
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 0.8rem;
+	height: 7.25rem;
+	background-color: #fdf6f7;
+}
+.plight .title{
+	font-size: 0.48rem;
+	color: #000000;
+	font-weight: bold;
+}
+.plight>img{
+	width: 100%;
+	height: 89%;
+}
+.ability{
+	box-sizing: border-box;
+	text-align: center;
+	padding-top: 0.8rem;
+	height: 8rem;
+	background-color: #074e9c;
+}
+.ability .title{
+	font-size: 0.48rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding-bottom: 0.2rem;
+}
+.ability>img{
+	width: 60%;
+	height: 80%;
+}
+.footer_xy{
+	margin-top: 0;
+}

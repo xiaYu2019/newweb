@@ -1,0 +1,254 @@
+body {
+	background-color: #f7f7f7;
+}
+
+header .video {
+	width: 100%;
+}
+
+header .video>div {
+	position: absolute;
+	top: 3.7rem;
+	width: 100%;
+	text-align: center;
+	font-size: 0.25rem;
+	color: #FFFFFF;
+}
+
+header .video>div h2 {
+	font-size: 0.6rem;
+	margin-bottom: 0.2rem;
+}
+
+header .video>div>img {
+	margin-top: 0.1rem;
+	width: 0.55rem;
+	height: 0.55rem;
+}
+
+
+.center .plate_a {
+	text-align: center;
+
+}
+
+.center .plate_a>h3 {
+	margin: 0.6rem 0 0.3rem 0;
+	font-size: 0.4rem;
+	font-weight: bold;
+}
+
+.center .plate_a>p {
+	margin-top: 0.1rem;
+	font-size: 0.24rem;
+}
+
+.center .plate_a button {
+	margin-top: 0.35rem;
+	width: 2.5rem;
+	height: 0.7rem;
+	font-size: 0.3rem;
+	color: white;
+	background-color: #005FD5;
+	border: none;
+	border-radius: 0.05rem;
+	vertical-align: top;
+}
+
+.center .plate_a>img {
+	margin-top: 0.6rem;
+	width: 7.3rem;
+	height: 3.6rem;
+}
+
+.center .plate_a .nape {
+	margin-top: 0.8rem;
+	display: flex;
+	justify-content: space-between;
+	text-align: left;
+}
+
+.center .plate_a .nape .brief {
+	position: relative;
+	box-sizing: border-box;
+	width: 25%;
+	height: 6rem;
+	background-repeat: no-repeat;
+	background-position: left;
+	background-size: 100%;
+}
+
+.center .plate_a .nape .brief:nth-child(1) {
+	background-image: url(../img/01.png);
+}
+
+.center .plate_a .nape .brief:nth-child(2) {
+	background-image: url(../img/02.png);
+}
+
+.center .plate_a .nape .brief:nth-child(3) {
+	background-image: url(../img/03.png);
+}
+
+.center .plate_a .nape .brief:nth-child(4) {
+	background-image: url(../img/04.png);
+}
+
+.center .plate_a .nape .brief_f::after {
+	content: "";
+	display: block;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.center .plate_a .nape .brief .container {
+	box-sizing: border-box;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0.4rem;
+
+}
+
+.center .plate_a .nape .brief span,
+.center .plate_a .nape .brief h3 {
+	display: block;
+	margin-bottom: 0.2rem;
+	color: white;
+	font-size: 0.35rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.center .plate_a .nape .brief h3::after {
+	display: block;
+	width: 35%;
+	content: "";
+	position: relative;
+	top: 0.25rem;
+	border: 0.01rem solid white;
+}
+
+.center .plate_a .nape .brief p {
+	margin-top: 1.5rem;
+	color: white;
+	font-size: 0.18rem;
+}
+
+@media screen and (max-width:750px) {
+	.center .plate_a .nape .brief p {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.center .plate_a .advantage {
+		flex-wrap: wrap;
+	}
+}
+
+.center .plate_a .advantage {
+	box-sizing: border-box;
+	margin-top: 0.6rem;
+	padding: 0 0.2rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.center .plate_a .advantage .kind {
+	box-sizing: border-box;
+	padding: 1rem 0 0.3rem 0;
+	width: 19%;
+	background-color: #FFFFFF;
+	box-shadow: 0rem 0rem 0rem 0.04rem white inset;
+	transition: all 0.2s;
+}
+
+
+.center .plate_a .advantage .kind:hover {
+	box-shadow: 0rem 0rem 0rem 0.03rem #005fd5 inset;
+}
+
+.center .plate_a .advantage .kind h3 {
+	margin-top: 0.4rem;
+	margin-bottom: 0.2rem;
+	font-size: 0.35rem;
+	font-weight: bold;
+
+}
+
+.center .plate_a .advantage .kind>img {
+	width: 1.05rem;
+	height: 1.05rem;
+}
+
+.center .plate_a .advantage .kind p {
+	margin-top: 0.1rem;
+	font-size: 0.18rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.center .plate_b {
+	overflow: hidden;
+	position: relative;
+}
+
+.center .plate_b .box {
+	margin-top: 0.8rem;
+	display: flex;
+	align-items: center;
+	position: relative;
+	left: -25%;
+	align-items: baseline;
+}
+
+.center .plate_b .box>div {
+	background-size: 80%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 50%;
+	height: 3.5rem;
+	flex: none;
+
+}
+
+
+.center .plate_b .left {
+	width: 0.67rem;
+	height: 0.67rem;
+	display: inline-block;
+	background-image: url(../img/lifthuise.png);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	left: 23.5%;
+	top: 3.2rem;
+}
+
+.center .plate_b .right {
+	width: 0.67rem;
+	height: 0.67rem;
+	display: inline-block;
+	background-image: url(../img/righthuise.png);
+	position: absolute;
+	background-position: center;
+	background-size: cover;
+	right: 23.5%;
+	top: 3.2rem;
+}
+
+.center .plate_b button {
+	background-color: white;
+	color: #005FD5;
+	border: 0.01rem solid #005FD5;
+}
+
+.center .plate_b button:hover {
+	background-color: #005FD5;
+	color: white;
+}

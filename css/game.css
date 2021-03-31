@@ -1,0 +1,81 @@
+.xbox{
+	color: #FFFFFF;
+	position: relative;
+}
+.xbox .caption{
+	position: absolute;
+	top: 35%;
+	left: 40%;
+	font-size: 0.7rem;
+	font-weight: bold;
+	text-align: center;
+	 
+}
+.xbox .describe{
+	font-size: 0.30rem;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+}
+.content {
+	padding-top: 0.3rem;
+}
+.content .caption{
+	font-size: 0.5rem;
+	font-weight: bold;
+	text-align: center;
+	color: #000000;
+}
+.content .item_a{
+	padding: 1rem 3rem;
+	display: flex;
+	justify-content: space-between;
+}
+.content .item_a:nth-child(odd){
+	background-color: #FFFFFF;
+	
+}
+.content .item_a .text{
+	width: 6rem;
+	color: #000000;
+}
+.content .item_a .text .subtitle{
+	font-size: 0.36rem;
+	font-weight: bold;
+	color: #005FD5;
+}
+.content .item_a .text .subtitle>span{
+	font-weight: 100;
+	font-size: 0.24rem;
+}
+.content .item_a .text .synopsis{
+	font-size: 0.20rem;
+	padding-bottom: 0.2rem;
+}
+.content .item_a .text .bt{
+	width: 2.4rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	text-align: center;
+	background-color: #005FD5;
+	color: #FFFFFF;
+	border-radius: 0.05rem;
+}
+.content .item_a .pic{
+	width: 2.9rem;
+	height: 2.9rem;
+}
+.floor_xy{
+	margin-top: 0;
+}
+
+
+
+@media screen and (max-width:750px) {
+	.content .item_a .pic{
+		width: 5rem;
+		height: 5rem;
+	}
+	
+}

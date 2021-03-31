@@ -1,0 +1,933 @@
+.imgs {
+	box-sizing: border-box;
+	padding-top: 1.7rem;
+	width: 19.2rem;
+	height: 4.3rem;
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.imgs>h1 {
+	font-weight: bold;
+	font-size: 0.54rem;
+	text-align: center;
+}
+
+.imgs>p {
+	margin-top: 0.2rem;
+	font-size: 0.24rem;
+	text-align: center;
+}
+
+@media screen and (min-width:751px) {
+	.intro {
+		width: 100%;
+		height: 8.5rem;
+		background-image: url(../img/bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	.intro .text {
+		box-sizing: border-box;
+		width: 50%;
+		height: 100%;
+		padding: 2.6rem 0 0 1.05rem;
+
+	}
+
+	.intro .text>h2 {
+		font-weight: bold;
+		font-size: 0.54rem;
+		color: #FFFFFF;
+	}
+
+	.intro .text>p {
+		margin-top: 0.48rem;
+		font-size: 0.25rem;
+		color: #FFFFFF;
+		line-height: 0.48rem;
+	}
+
+	.intro .exhibition {
+		width: 50%;
+		height: 100%;
+		background-image: url(../img/circle.png);
+		background-repeat: no-repeat;
+		background-size: 75% 75%;
+		background-position: center;
+		position: relative;
+	}
+
+	.intro .exhibition .icon1 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 3.6rem;
+		top: 2rem;
+	}
+
+	.intro .exhibition .icon2 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 4.5rem;
+		top: 3.1rem;
+	}
+
+	.intro .exhibition .icon3 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 3.6rem;
+		top: 4.1rem;
+	}
+
+	.intro .exhibition .icon4 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 4.5rem;
+		top: 5.1rem;
+	}
+
+	.intro .exhibition .circle {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 2.5rem;
+		height: 0.88rem;
+		border-radius: 0.2rem;
+		font-size: 0.38rem;
+		background-color: #005FD5;
+		text-align: center;
+		line-height: 0.88rem;
+		color: #F7F7F7;
+	}
+
+	.intro .exhibition .circle:hover {
+		animation-play-state: paused;
+	}
+
+	.intro .exhibition .circle_a {
+		animation: action 10s linear infinite;
+	}
+
+	.intro .exhibition .circle_b {
+		animation: action 10s linear infinite;
+		animation-delay: -2s;
+	}
+
+	.intro .exhibition .circle_c {
+		animation: action 10s linear infinite;
+		animation-delay: -4s;
+	}
+
+	.intro .exhibition .circle_d {
+		animation: action 10s linear infinite;
+		animation-delay: -6s;
+	}
+
+	.intro .exhibition .circle_e {
+		animation: action 10s linear infinite;
+		animation-delay: -8s;
+	}
+
+	@keyframes action {
+		from {
+			transform: rotate(0deg) translate(120%) rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg) translate(120%) rotate(-360deg);
+		}
+	}
+
+	.team {
+		height: 7.6rem;
+		background-image: url(../img/bg2.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		border: 1px solid #196ace;
+	}
+
+	.team>h3 {
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 0.45rem;
+		margin-bottom: 0.39rem;
+		font-weight: bold;
+		margin-top: 1rem;
+	}
+
+	.team>p {
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 0.2rem;
+		font-weight: bold;
+	}
+
+	.team .member {
+		margin: 0.9rem 3rem;
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+	.team .member .person {
+		width: 20%;
+	}
+
+	.team .member .person .picture {
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-position: center;
+		text-align: center;
+
+	}
+
+	.team .member .person .picture>img {
+		width: 2.3rem;
+		height: 2.3rem;
+	}
+
+	.team .member .person .name {
+		margin-top: 0.24rem;
+		font-size: 0.24rem;
+		color: #F7F7F7;
+		text-align: center;
+	}
+
+	.team .member .person .post {
+		margin-top: 0.21rem;
+		text-align: center;
+		font-size: 0.24rem;
+		color: #F7F7F7;
+	}
+
+	.honor {
+		text-align: center;
+	}
+
+	.honor>h3 {
+		text-align: center;
+		font-size: 0.45rem;
+		font-weight: bold;
+		margin-top: 0.9rem;
+	}
+
+	.honor>p {
+		margin-top: 0.4rem;
+		font-size: 0.25rem;
+	}
+
+	.honor .slideshow {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.honor .slideshow .box {
+		margin-top: 0.8rem;
+		display: flex;
+		align-items: center;
+		position: relative;
+		left: -25%;
+	}
+
+	.honor .slideshow .box div {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center top;
+		width: 50%;
+		height: 3.5rem;
+		flex: none;
+
+	}
+
+	.honor .slideshow .box .pitch {
+		height: 5rem;
+	}
+
+	.honor .slideshow .left {
+		width: 0.6rem;
+		height: 0.6rem;
+		background-image: url(../img/lifthuise.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		left: 20%;
+		top: 50%;
+	}
+
+	.honor .slideshow .left:hover {
+		background-image: url(../img/left.png);
+	}
+
+	.honor .slideshow .right {
+		width: 0.6rem;
+		height: 0.6rem;
+		background-image: url(../img/righthuise.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		right: 20%;
+		top: 50%;
+	}
+
+	.honor .slideshow .right:hover {
+		background-image: url(../img/right.png);
+	}
+
+	.course {
+		margin-top: 1rem;
+		width: 100%;
+		height: 9rem;
+		background-color: #F7F7F7;
+		padding-top: 1rem;
+		position: relative;
+	}
+
+	.course>h3 {
+		font-size: 0.48rem;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.course .process {
+		width: 100%;
+		height: 80%;
+
+	}
+
+	.course .process::before {
+		content: "";
+		width: 80%;
+		height: 0.02rem;
+		background-color: #005FD5;
+		display: block;
+		position: relative;
+		top: 50%;
+		left: 10%;
+	}
+
+	.course .process .imgbox {
+		width: 85%;
+		position: relative;
+		top: 43%;
+		left: 8%;
+		display: flex;
+		justify-content: space-between
+	}
+
+	.course .process .imgbox .imgs_a {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-1.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_b {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_c {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_d {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-4.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_e {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-5.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_f {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-6.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .pic_a::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 0.05rem solid transparent;
+		border-left: 0.05rem solid transparent;
+		/*transparent 表示透明*/
+		border-right: 0.05rem solid transparent;
+		border-top: 0.05rem solid #005fd5;
+		position: relative;
+		top: 110%;
+		left: 45%;
+	}
+
+	.course .process .imgbox .pic_b::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 0.05rem solid #005fd5;
+		border-left: 0.05rem solid transparent;
+		/*transparent 表示透明*/
+		border-right: 0.05rem solid transparent;
+		border-top: 0.05rem solid transparent;
+		position: relative;
+		top: -18%;
+		left: 45%;
+	}
+
+	.course .frame {
+		position: absolute;
+		box-sizing: border-box;
+		width: 2.8rem;
+		padding: 0.24rem 0.2rem;
+		background-color: #FFFFFF;
+		border-radius: 0.05rem;
+	}
+
+	.course .frame>h4 {
+		font-size: 0.24rem;
+		font-weight: bold;
+		color: #005FD5;
+		margin-bottom: 0.1rem;
+	}
+
+	.course .frame>p {
+		font-size: 0.18rem;
+		line-height: 0.3rem;
+	}
+
+	.course .framep_a {
+		top: 60%;
+		left: 4%;
+	}
+
+	.course .framep_b {
+		bottom: 57%;
+		left: 19%;
+	}
+
+	.course .framep_c {
+		top: 60%;
+		left: 35%;
+	}
+
+	.course .framep_d {
+		bottom: 57%;
+		left: 50%;
+	}
+
+	.course .framep_e {
+		top: 60%;
+		left: 65%;
+	}
+
+	.course .framep_f {
+		top: 60%;
+		left: 82%;
+	}
+
+	.course .framep_g {
+		bottom: 57%;
+		left: 82%;
+	}
+
+	.course>p {
+		text-align: center;
+		font-size: 0.24rem;
+	}
+}
+
+
+
+
+
+
+
+
+/* ==================================================================================== */
+
+
+
+
+
+
+/* 媒体查询 */
+@media screen and (max-width:750px) {
+	.intro {
+		width: 100%;
+		background-image: url(../img/bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.intro .text {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 1.3rem 1.05rem 0.5rem;
+	}
+
+	.intro .text>h2 {
+		text-align: center;
+		font-weight: bold;
+		font-size: 1rem;
+		color: #FFFFFF;
+	}
+
+	.intro .text>p {
+		margin-top: 0.48rem;
+		font-size: 0.25rem;
+		color: #FFFFFF;
+		line-height: 0.7rem;
+	}
+
+	.intro .exhibition {
+		width: 100%;
+		height: 8rem;
+		background-image: url(../img/circle.png);
+		background-repeat: no-repeat;
+		background-size: 40% 80%;
+		background-position: center;
+		position: relative;
+	}
+
+	.intro .exhibition .icon1 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 8.5rem;
+		top: 2rem;
+	}
+
+	.intro .exhibition .icon2 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 9.5rem;
+		top: 2.8rem;
+	}
+
+	.intro .exhibition .icon3 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 8.5rem;
+		top: 3.8rem;
+	}
+
+	.intro .exhibition .icon4 {
+		width: 1.35rem;
+		height: 1.35rem;
+		position: absolute;
+		left: 9.5rem;
+		top: 4.5rem;
+	}
+
+	.intro .exhibition .circle {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		margin: auto;
+		width: 2.5rem;
+		height: 0.88rem;
+		border-radius: 0.2rem;
+		font-size: 0.38rem;
+		background-color: #005FD5;
+		text-align: center;
+		line-height: 0.88rem;
+		color: #F7F7F7;
+	}
+
+	.intro .exhibition .circle:hover {
+		animation-play-state: paused;
+	}
+
+	.intro .exhibition .circle_a {
+		animation: action 10s linear infinite;
+	}
+
+	.intro .exhibition .circle_b {
+		animation: action 10s linear infinite;
+		animation-delay: -2s;
+	}
+
+	.intro .exhibition .circle_c {
+		animation: action 10s linear infinite;
+		animation-delay: -4s;
+	}
+
+	.intro .exhibition .circle_d {
+		animation: action 10s linear infinite;
+		animation-delay: -6s;
+	}
+
+	.intro .exhibition .circle_e {
+		animation: action 10s linear infinite;
+		animation-delay: -8s;
+		clear: both
+	}
+
+	@keyframes action {
+		from {
+			transform: rotate(0deg) translate(120%) rotate(0deg);
+		}
+
+		to {
+			transform: rotate(360deg) translate(120%) rotate(-360deg);
+		}
+	}
+
+	.team {
+		background-image: url(../img/bg2.png);
+		border: 1px solid #196ace;
+	}
+
+	.team>h3 {
+		margin-top: 1.2rem;
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 1rem;
+		margin-bottom: 0.39rem;
+		font-weight: bold;
+	}
+
+	.team>p {
+		text-align: center;
+		color: #FFFFFF;
+		font-size: 0.2rem;
+		padding: 0 1.05rem;
+		line-height: 0.7rem;
+	}
+
+	.team .member {
+		padding: 1rem 3rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around
+	}
+
+	.team .member .person {
+		text-align: center;
+		width: 6rem;
+		margin-bottom: 2rem;
+	}
+
+	.team .member .person .picture>img {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	.team .member .person .name {
+		margin-top: 0.2rem;
+		font-size: 0.19rem;
+		color: #F7F7F7;
+		text-align: center;
+	}
+
+	.team .member .person .post {
+		margin-top: 0.2rem;
+		font-size: 0.19rem;
+		color: #F7F7F7;
+		text-align: center;
+	}
+
+	.honor {
+		text-align: center;
+	}
+
+	.honor>h3 {
+		text-align: center;
+		font-size: 0.45rem;
+		font-weight: bold;
+		margin-top: 0.9rem;
+	}
+
+	.honor>p {
+		margin-top: 0.4rem;
+		font-size: 0.25rem;
+	}
+
+	.honor .slideshow {
+		overflow: hidden;
+		position: relative;
+	}
+
+	.honor .slideshow .box {
+		margin-top: 0.8rem;
+		display: flex;
+		align-items: center;
+		position: relative;
+		left: -25%;
+	}
+
+	.honor .slideshow .box div {
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center top;
+		width: 50%;
+		height: 3.5rem;
+		flex: none;
+
+	}
+
+	.honor .slideshow .box .pitch {
+		height: 5rem;
+	}
+
+	.honor .slideshow .left {
+		width: 0.6rem;
+		height: 0.6rem;
+		background-image: url(../img/lifthuise.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		left: 20%;
+		top: 50%;
+	}
+
+	.honor .slideshow .left:hover {
+		background-image: url(../img/left.png);
+	}
+
+	.honor .slideshow .right {
+		width: 0.6rem;
+		height: 0.6rem;
+		background-image: url(../img/righthuise.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		right: 20%;
+		top: 50%;
+	}
+
+	.honor .slideshow .right:hover {
+		background-image: url(../img/right.png);
+	}
+
+	.course {
+		margin-top: 1rem;
+		width: 100%;
+		height: 30rem;
+		background-color: #F7F7F7;
+		position: relative;
+	}
+
+	.course>h3 {
+		margin-top: 1.2rem;
+		text-align: center;
+		font-size: 1rem;
+		margin-bottom: 0.39rem;
+		font-weight: bold;
+	}
+
+	.course .process {
+		width: 100%;
+		height: 85%;
+		position: relative;
+
+	}
+
+	.course .process::before {
+		content: "";
+		width: 0.02rem;
+		height: 75%;
+		background-color: #005FD5;
+		display: block;
+		position: absolute;
+		top: 5%;
+		left: 50%;
+	}
+
+	.course .process .imgbox {
+		width: 10%;
+		height: 78%;
+		position: absolute;
+		top: 4%;
+		left: 47.5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+
+	}
+
+	.course .process .imgbox .imgs_a {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-1.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_b {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-2.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_c {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-3.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_d {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-4.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_e {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-5.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .imgs_f {
+		width: 1rem;
+		height: 1rem;
+		background-image: url(../img/his-6.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	.course .process .imgbox .pic_a::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 0.15rem solid transparent;
+		border-left: 0.15rem solid transparent;
+		/*transparent 表示透明*/
+		border-right: 0.15rem solid #005fd5;
+		border-top: 0.15rem solid transparent;
+		position: relative;
+		top: 30%;
+		left: -40%;
+	}
+
+	.course .process .imgbox .pic_b::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 0;
+		border-bottom: 0.15rem solid transparent;
+		border-left: 0.15rem solid #005fd5;
+		/*transparent 表示透明*/
+		border-right: 0.15rem solid transparent;
+		border-top: 0.15rem solid transparent;
+		position: relative;
+		top: 35%;
+		left: 110%;
+	}
+
+	.course .frame {
+		position: absolute;
+		box-sizing: border-box;
+		width: 6rem;
+		padding: 0.24rem 0.2rem;
+		background-color: #FFFFFF;
+		border-radius: 0.05rem;
+	}
+
+	.course .frame>h4 {
+		font-size: 0.48rem;
+		font-weight: bold;
+		color: #005FD5;
+		margin-bottom: 0.1rem;
+	}
+
+	.course .frame>p {
+		font-size: 0.36rem;
+		line-height: 0.6rem;
+	}
+
+	.course .framep_a {
+		top: 8%;
+		left: 14%;
+	}
+
+	.course .framep_b {
+		top: 21%;
+		left: 55%;
+	}
+
+	.course .framep_c {
+		top: 33%;
+		left: 14%;
+	}
+
+	.course .framep_d {
+		top: 46%;
+		left: 55%;
+	}
+
+	.course .framep_e {
+		top: 58%;
+		left: 14%;
+	}
+
+	.course .framep_f {
+		top: 70%;
+		left: 14%;
+	}
+
+	.course .framep_g {
+		top: 70%;
+		left: 55%;
+	}
+
+	.course>p {
+		text-align: center;
+		font-size: 0.24rem;
+	}
+}
