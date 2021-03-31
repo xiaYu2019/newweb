@@ -7,8 +7,9 @@ console.log(textimg)
 huoji()														//调用方法
 
 
-
-
+window.onscroll = ()=>{
+ huoji();
+}
 
 function huoji (){
 	let ymHeight = window.innerHeight;       				//获取可视高度
