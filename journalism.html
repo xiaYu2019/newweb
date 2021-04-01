@@ -2,218 +2,308 @@
 <html lang="zh-CN">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="text/css" href="" />
+		<link rel="stylesheet" type="text/css" href="./css/reset.css" /> <!-- 初始样式 -->
+		<link rel="stylesheet" type="text/css" href="./css/head.css" /> <!-- 引入头部样式 -->
+		<link rel="stylesheet" type="text/css" href="./css/footer.css" /> <!-- 尾部样式 -->
 		<link data-n-head="ssr" rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/journalism.css" />
 		<title>新闻咨询 -卓动科技</title>
+
 	</head>
-	<style type="text/css">
-		.j_banner {
-			background: url(./img/banner.png);
-			background-repeat: no-repeat;
-			height: 26.79rem;
-		}
-
-		.banner {
-			display: flex;
-			flex-direction: column;
-			text-align: center;
-			padding-top: 180px;
-			font-size: 33px;
-			color: #000;
-		}
-
-		.j_banner_p {
-			font-size: 22px;
-		}
-
-		.now_tabs {
-			height: 82px;
-			margin-top: 45px;
-			width: 100%;
-			background-color: white;
-		}
-
-		.zixuna,
-		.zixuna_a {
-			display: inline-block;
-			width: 300px;
-			height: 80px;
-			margin-left: 220px;
-			border-radius: 20px;
-			color: black;
-			text-align: center;
-			line-height: 80px;
-			font-size: 30px;
-		}
-
-		.now_tabs .zixuna_a {
-			background-color: #404040;
-			color: white;
-			font-size: 30px;
-		}
-
-		a:hover {
-			background-color: #404040;
-			color: white;
-			transition: all .3s;
-		}
-
-		.news_list_wrap {
-			height: 340px;
-			background-color: #f8f8f8;
-		}
-
-		.news_list_wrap {
-			position: relative;
-			background-color: #F8F8F8;
-		}
-
-		.Consulting_company_wrap {
-			display: flex;
-			position: absolute;
-			width: 1330px;
-			height: 300px;
-			top: 40px;
-			margin-left: 295px;
-			background-color: #fff;
-		}
-
-		.img_wrap {
-			float: left;
-			width: 300px;
-			height: 300px;
-		}
-
-		.new_img {
-			vertical-align: middle;
-			width: 300px;
-			height: 300px;
-			object-fit: contain;
-		}
-
-		.news_content {
-			vertical-align: middle;
-			width: 1030px;
-			height: 108px;
-			object-fit: contain;
-			padding: 60px 208px 70px 75px;
-			margin: 0 auto;
-		}
-
-		.h3_consult {
-			overflow: hidden;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			line-height: 1.2;
-			margin-bottom: 50px;
-			font-size: 33px;
-			font-weight: 700;
-			color: #5a5a5a;
-		}
-
-		.p1_consult {
-			line-height: 1;
-			margin-bottom: 35px;
-			font-size: 14px;
-			color: #ababab;
-		}
-
-		.p2_consult {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			font-size: 19px;
-			font-weight: 400;
-			vertical-align: baseline;
-			color: #ababab;
-		}
-	</style>
 	<body>
-		<div class="j_banner">
-			<div class="banner">
-				<h2 class="j_hd">
-					新闻咨询
-				</h2>
-				<p class="j_banner_p">
-					我们一起去发现更多
-				</p>
+		<div class="frame_xy">
+			<div class="box_xy">
+				<div class="log_xy">
+					<h1>
+						<img src="./img/logo.png" alt="logo">
+						<span>卓动科技</span>
+					</h1>
+				</div>
+				<div class="nav_xy">
+					<div class="kind_xy">
+						<div class="item_xy">
+							<a href="index.html">首页</a>
+						</div>
+						<div class="item_xy">
+							<a href="story.html">卓动故事</a>
+							<div class="classify_xy">
+								<ul>
+									<li><a href="story.html#intro">公司简介</a></li>
+									<li><a href="story.html#team">卓动团队</a></li>
+									<li><a href="story.html#honor">卓动荣誉</a></li>
+									<li><a href="story.html#course">发展历程</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item_xy">
+							<a href="business/bigdata.html"> 卓动业务</a>
+							<div class="classify_xy">
+								<ul>
+									<li><a href="business/bigdata.html">大数据业务</a></li>
+									<li><a href="business/software.html">软件服务</a></li>
+									<li><a href="business/game.html">游戏业务</a></li>
+									<li><a href="business/company.html">企业服务</a></li>
+									<li><a href="business/dirSir.html">电商应用</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item_xy">
+							<a href="journalism.html?tab=1">新闻资讯</a>
+							<div class="classify_xy">
+								<ul>
+									<li><a href="journalism.html?tab=0">活动资讯</a></li>
+									<li><a href="journalism.html?tab=1">公司资讯</a></li>
+									<li><a href="journalism.html?tab=2">培训资讯</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item_xy">
+							<a href="">加入我们</a>
+							<div class="classify_xy">
+								<ul>
+									<li><a href="">社会招聘</a></li>
+									<li><a href="">校园招聘</a></li>
+									<li><a href="">福利待遇</a></li>
+									<li><a href="">培训发展</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="item_xy">
+							<a href="relation.html">联系我们</a>
+						</div>
+					</div>
+				</div>
+				<div class="eWeChat_xy">
+					<div class="code">
+						卓动科技公众号
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="j_banner">
+			<div class="new_consult">
+				新闻咨询
+			</div>
+			<div class="j_banner_p">
+				我们一起去发现更多
+			</div>
+
+		</div>
+
 		<div class="now_tabs">
-			<a class="zixuna">活动咨讯</a>
-			<a class="zixuna_a">公司咨讯</a>
-			<a class="zixuna">培训咨询</a>
+
+			<div class="box">活动咨讯</div>
+
+			<div class="box">公司咨讯</div>
+
+			<div class="box">培训咨讯</div>
 		</div>
-		</div>
-		<div class="news_list_wrap">
-			<div class="Consulting_company_wrap">
-				<div class="img_wrap">
-					<img src="img/22ab21dc41.png" class="new_img">
+
+
+		<!-- aa -->
+		<div class="context ">
+			<div class="Consulting_company_wrap" style="background-image: url(./img/dc0d231d03.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">卓动×Apple Store门店折扣优惠来啦！！！</h3>
+					<p class="p1_consult">2021-03-22</p>
+					<p class="p2_consult">
+						卓动福利享不停—我司员工可享受Apple Store门店最高等级的折扣优惠。......
+					</p>
 				</div>
+			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/2acb76eb94.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">魅力不局限|我有我的Young</h3>
+					<p class="p1_consult">2021-03-10</p>
+					<p class="p2_consult">
+
+						魅力不局限，我有我的YoungHAPPY WOMEN'S DAY......
+					</p>
+				</div>
+			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/6945851ca4.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">
+						元宵节 l 吃元宵· 猜谜语· 乐宵遥
+					</h3>
+					<p class="p1_consult">2021-02-27</p>
+					<p class="p2_consult">
+						吃元宵，猜谜语，乐宵遥 花好月圆之际，愿大家心圆、梦圆、团团圆圆！......
+
+					</p>
+				</div>
+			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/106b16a084.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">【2021,就是这么牛！】卓动2021年年会精彩回顾</h3>
+					<p class="p1_consult">2021-02-03</p>
+					<p class="p2_consult">
+
+						向着2021，让我们一起勇敢奔跑 新年新篇章，要相信，卓动2021,就是这么牛!......
+
+					</p>
+				</div>
+			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/106b16a084.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">Merry Chirstmas l 卓动给你的暖心圣诞</h3>
+					<p class="p1_consult">2020-12-30</p>
+					<p class="p2_consult">
+
+						有你有我，一起度过这个充满温暖与爱的圣诞节~......
+
+					</p>
+				</div>
+			</div>
+			<div class="but_lef">
+				<button type="button" class="button_left">加载更多>></button>
+			</div>
+		</div>
+
+		<!-- bb -->
+		<div class="context ">
+			<div class="Consulting_company_wrap" style="background-image: url(./img/22ab21dc41.png);">
 				<div class="news_content">
 					<h3 class="h3_consult">JODO STYLE | 卓动人有卓动范儿</h3>
 					<p class="p1_consult">2021-01-18</p>
 					<p class="p2_consult">
-						2020年，不平凡的一年。全球面临疫情冲击，卓动不惧风浪实现了3年以来的新突破。面对疫情和转型，取得新成绩，是每位卓动人在一起拼出来的成果。我们开始......</p>
+						2020年，不平凡的一年。全球面临疫情冲击，卓动不惧风浪实现了3年以来的新突破。面对疫情和转型，取得新成id绩，是每位卓动人在一起拼出来的成果。我们开始......</p>
 				</div>
 			</div>
-		</div>
-		<div class="news_list_wrap">
-			<div class="Consulting_company_wrap">
-				<div class="img_wrap">
-					<img src="img/1b8db8501d.png" class="new_img">
-				</div>
-				<div class="news_content">
-					<h3 class="h3_consult">JODO STYLE | 一图回顾上周精彩，开启本周新惊喜！</h3>
-					<p class="p1_consult">2021-01-11</p>
-					<p class="p2_consult">
-						-往期精彩回顾- 带你看透卓动 l 卓动文化全新发布JODO STYLE l 卓动文化全新发布！卓动文化 “带盐” 人—JOJO家族大公开！......
-					</p>
-				</div>
+
+			<div class="but_cen">
+				<button type="button" class="button_center">加载更多>></button>
 			</div>
 		</div>
-		<div class="news_list_wrap">
-			<div class="Consulting_company_wrap">
-				<div class="img_wrap">
-					<img src="img/3156ee1a01.png" class="new_img">
-				</div>
+
+
+		<!-- cc -->
+
+		<div class="context">
+			<div class="Consulting_company_wrap" style="background-image: url(./img/faf88cd61d.png);">
 				<div class="news_content">
-					<h3 class="h3_consult">JODO STYLE | 卓动文化全新发布！卓动文化 “带盐” 人—JOJO家族大公开！</h3>
-					<p class="p1_consult">2021-01-11</p>
-					<p class="p2_consult">
-						新年新开始，卓动文化 全新发布！同时，卓动吉祥物 全新升级——身份上：喜提 卓动文化代言人 名号形象上：从独角兽升级为 JOJO家族现在JOJO家......
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class="news_list_wrap">
-			<div class="Consulting_company_wrap">
-				<div class="img_wrap">
-					<img src="img/f24dc162ff.jpg" class="new_img">
-				</div>
-				<div class="news_content">
-					<h3 class="h3_consult">卓动科技喜提2021年第一个官方登记证书</h3>
-					<p class="p1_consult">2021-01-08</p>
+					<h3 class="h3_consult">学习不停，成长不止-小卓同学正式启动</h3>
+					<p class="p1_consult">2020-12-23</p>
 					<p class="p2_consult">
 
-						2021年的第一个工作日，卓动科技收到来自广州市科学技术局颁发的“广州市科技企业孵化器登记证书”。这个证书是对卓动孵化器创建阶段所作努力的肯定。......
+						第五季小卓同学正式启动了！让我们看看，为期4天的集训，都发生了什么？......
+
 					</p>
 				</div>
 			</div>
-		</div>
-		<div class="news_list_wrap">
-			<div class="Consulting_company_wrap">
-				<div class="img_wrap">
-					<img src="img/bb5264d3c4.png" class="new_img">
-				</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/e50c484ad5.png);">
 				<div class="news_content">
-					<h3 class="h3_consult">带你看透卓动 | 卓动文化全新发布</h3>
-					<p class="p1_consult">2021-01-08</p>
+					<h3 class="h3_consult">学习平台周年活动 || 学习平台周年大盘点！</h3>
+					<p class="p1_consult">2020-07-10</p>
 					<p class="p2_consult">
-						2020，转型之年，业务在拓展，团队在锤炼。2020年，是卓动转型之年：游戏业务上，从深耕海外游戏，拓展到全球游戏发行和研发；发行了年度爆款游戏，并......
+
+						学习平台周年大盘点；每个数据，每个热门都记录着你的学习足迹；无限精进，尽在此刻！......
+
 					</p>
 				</div>
 			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/4c0f380a95.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">
+						【知识大众筹】-建立卓动人自己的知识库！
+					</h3>
+					<p class="p1_consult">2020-07-10</p>
+					<p class="p2_consult">
+
+						【卓动学院】新功能上线—知识大众筹，一起来搭建属于卓动人的知识库吧~......
+
+					</p>
+				</div>
+			</div>
+			<div class="Consulting_company_wrap"  style="background-image: url(./img/895eb9152f.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">扎根·成长|To Be A Jodoer</h3>
+					<p class="p1_consult">2020-07-10</p>
+					<p class="p2_consult">
+
+
+						......
+
+
+					</p>
+				</div>
+			</div>
+			<div class="Consulting_company_wrap" style="background-image: url(./img/3fdc254579.png);">
+				<div class="news_content">
+					<h3 class="h3_consult">Merry Chirstmas l 卓动给你的暖心圣诞</h3>
+					<p class="p1_consult">2020-12-30</p>
+					<p class="p2_consult">
+
+						有你有我，一起度过这个充满温暖与爱的圣诞节~......
+
+					</p>
+				</div>
+			</div>
+			<div class="but_rig">
+				<button type="button" class="button_right">加载更多>></button>
+			</div>
 		</div>
+		<footer class="footer_xy">
+			<div class="synopsis_xy">
+				<div class="group_xy">
+					<h3>卓动故事</h3>
+					<a href="story.html#profile">公司简介</a>
+					<a href="story.html#team">卓动团队</a>
+					<a href="story.html#honor">卓动荣誉</a>
+					<a href="story.html#history">发展历程</a>
+				</div>
+				<div class="group_xy">
+					<h3>卓动业务</h3>
+					<a href="business/bigdata.html">大数据业务</a>
+					<a href="business/software.html">软件服务</a>
+					<a href="business/game.html">游戏业务</a>
+					<a href="business/company.html">企业服务</a>
+					<a href="business/dirSir.html">电商应用</a>
+				</div>
+				<div class="group_xy">
+					<h3>新闻资讯</h3>
+					<a href="">公司资讯</a>
+					<a href="">活动资讯</a>
+					<a href="">培训资讯</a>
+				</div>
+				<div class="group_xy">
+					<h3>加入我们</h3>
+					<a href="">社会招聘</a>
+					<a href="">校园招聘</a>
+					<a href="">福利待遇</a>
+					<a href="">培训发展</a>
+				</div>
+				<div class="group_xy">
+					<h3>成为商业伙伴</h3>
+					<a href="">BD@JODOINC.COM</a>
+					<div>
+						<span>关注卓动科技</span>
+						<img class="weChat" src="./img/d9b6fc5.png" alt="">
+					</div>
+					<p>招聘: <a href="">HR@JODOINC.COM</a> </p>
+					<p>合作: <a href="">OVERSEA@JODOINC.COM</a> </p>
+				</div>
+			</div>
+			<div class="floor_xy">
+				<div>
+					<a href=""><span>法律声明</span></a>
+					<span>|</span>
+					<a href=""><span>隐私策略</span></a>
+					<span>|</span>
+					<a href=""><span>粤ICP备12082196号</span></a>
+				</div>
+				<div>
+					<span>COPYRIGHT</span>
+					<span>2021 </span>
+					<span>©</span>
+					<span>广州卓动信息科技有限公司.</span>
+					<span>ALL RIGHTS</span>
+				</div>
+			</div>
+			<img class="icon" src="./img/huojian.png">
+		</footer>
+		<script type="text/javascript" src="./js/footer.js"></script>
+		<script type="text/javascript" src="./js/journalism.js"></script>
 	</body>
 </html>

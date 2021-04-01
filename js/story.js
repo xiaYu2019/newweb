@@ -51,10 +51,3 @@ let boxDiv = box.getElementsByTagName("div");
 	 
  }
  
- let weChat = document.getElementsByClassName("weChat")[0]
- weChat.onmouseover = ()=>{
- 	weChat.parentNode.classList.add("code")
- }
- weChat.onmouseout = ()=>{
- 	weChat.parentNode.classList.remove("code")
- }

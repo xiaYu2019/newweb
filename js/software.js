@@ -10,10 +10,3 @@ window.onresize = function(){
 	html.style.fontSize =  width*100/1920+"px";
 }
 
-let weChat = document.getElementsByClassName("weChat")[0]
-			weChat.onmouseover = ()=>{
-				weChat.parentNode.classList.add("code")
-			}
-			weChat.onmouseout = ()=>{
-				weChat.parentNode.classList.remove("code")
-			}

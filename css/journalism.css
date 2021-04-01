@@ -1,0 +1,188 @@
+.new_consult {
+	font-size: 0.6rem;
+	font-weight: 900;
+	color: #000;
+	text-transform: capitalize;
+}
+
+.j_banner_p {
+	font-size: 0.27rem;
+	color: #12181a;
+	font-weight: 300;
+}
+
+.j_banner {
+	background: url(../img/banner.png);
+	background-repeat: no-repeat;
+	height: 3.23958rem;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 1.2rem;
+	font-size: 33px;
+	color: #000;
+}
+
+
+
+.now_tabs {
+	display: flex;
+	margin: 0.45rem 10% 0;
+	justify-content: center;
+	width: 80%;
+}
+
+.box,
+.box xue {
+	width: 3rem;
+	border-radius: 0.2rem;
+	margin: 0 5.5%;
+	text-align: center;
+	line-height: 0.8rem;
+	font-size: 0.3rem;
+}
+
+.now_tabs .box xue {
+	background-color: #404040;
+	color: white;
+	font-size: 0.3rem;
+}
+
+.now_tabs .box:hover {
+	background-color: #404040;
+	color: white;
+	transition: all .3s;
+}
+
+@media screen and (max-width:750px) {}
+
+.Consulting_company_wrap {
+	box-sizing: border-box;
+	width: 70%;
+	margin: 0.25rem auto 0;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: 25%;
+	background-position: left center;
+	padding-left: 20%;
+
+}
+
+@media screen and (max-width:750px) {
+	.Consulting_company_wrap {
+		width: 100%;
+		padding-left: 25%;
+	}
+}
+
+
+
+
+.news_content {
+	padding: 0.6rem 1rem 0.7rem 0.75rem;
+	margin: 0 auto;
+}
+
+.h3_consult {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+	font-size: 0.33rem;
+	font-weight: 700;
+
+}
+
+.p1_consult {
+	line-height: 1;
+	margin-bottom: 0.35rem;
+	font-size: 0.14rem;
+	color: #ababab;
+}
+
+.p2_consult {
+	font-size: 0.19rem;
+	font-weight: 400;
+	color: #ababab;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .box{
+			width: 100px;
+			height: 100px;
+			background-color: #FF0000;
+		} */
+.xue {
+	background-color: #404040;
+	color: white;
+}
+
+.context {
+	overflow: hidden;
+	background-color: #f8f8f8;
+	display: none;
+}
+
+.zhans {
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.but_cen,
+.but_lef,
+.but_rig {
+	text-align: center;
+	margin-top: 60px;
+	margin-bottom: 45px;
+}
+
+.button_center,
+.button_left,
+.button_right {
+	background-color: white;
+	width: 260px;
+	height: 60px;
+	font-size: 22px;
+	font-weight: 500;
+	border-radius: 10px;
+	overflow: hidden;
+	display: inline-block;
+	border-color: #111b28;
+	background-color: #111b28;
+	color: #fff;
+}
