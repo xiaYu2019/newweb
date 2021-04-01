@@ -14,12 +14,13 @@
 .j_banner {
 	background: url(../img/banner.png);
 	background-repeat: no-repeat;
+	background-size: cover;
 	height: 3.23958rem;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	padding-top: 1.2rem;
-	font-size: 33px;
+	font-size: 0.33rem;
 	color: #000;
 }
 
@@ -111,6 +112,7 @@
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
+
 }
 
 
@@ -167,19 +169,20 @@
 .but_lef,
 .but_rig {
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 45px;
+	margin-top: 0.6rem;
+	margin-bottom: 0.45rem;
 }
 
 .button_center,
 .button_left,
 .button_right {
 	background-color: white;
-	width: 260px;
-	height: 60px;
-	font-size: 22px;
+	width: 2.6rem;
+	height: 0.6rem;
+	min-height: 0.8rem;
+	font-size: 0.22rem;
 	font-weight: 500;
-	border-radius: 10px;
+	border-radius: 0.1rem;
 	overflow: hidden;
 	display: inline-block;
 	border-color: #111b28;
