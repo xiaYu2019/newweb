@@ -1,0 +1,325 @@
+.placeholder {
+	height: 0.6rem;
+}
+
+.bg {
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 4.2rem;
+	box-sizing: border-box;
+	padding-top: 2rem;
+	text-align: center;
+}
+
+.bg .caption {
+	font-size: 0.48rem;
+	color: #000000;
+	font-weight: bold;
+}
+
+.bg>p {
+	font-size: 0.22rem;
+}
+
+.welfare {
+	padding: 1rem 2rem 0.5rem;
+	background-color: #FFFFFF;
+}
+
+.welfare .caption {
+	text-align: center;
+	font-size: 0.48rem;
+	font-weight: bold;
+
+}
+
+.welfare .weal {
+	padding-top: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+.welfare .weal>li {
+	padding-top: 0.3rem;
+	width: 2rem;
+	text-align: center;
+	font-size: 0.12rem;
+}
+
+.welfare .weal>li>img {
+	width: 0.6rem;
+	height: 0.6rem;
+	display: block;
+	margin: 0 auto;
+}
+
+.culture {
+	padding: 0.5rem 2rem;
+	background-color: #F7F7F7;
+	display: flex;
+	justify-content: space-between;
+}
+
+.culture .item {
+	background-color: #FFFFFF;
+	background-image: url(../img/acti-1.png);
+	background-repeat: no-repeat;
+	background-size: 95%;
+	background-position: top center;
+	width: 23%;
+	box-sizing: border-box;
+	padding: 2.2rem 0.1rem 0.1rem;
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.14rem;
+}
+
+.culture .item .eye {
+	width: 0.17rem;
+	height: 0.13rem;
+}
+
+.invite {
+	padding: 1rem 0 0;
+	background-color: #f8fcff;
+}
+
+.invite>h3 {
+	text-align: center;
+	font-size: 0.48rem;
+	font-weight: bold;
+}
+
+.invite .tab {
+	font-size: 0.32rem;
+	padding: 1rem 2rem 0;
+	display: flex;
+	border-bottom: 1px solid #e0e4e7;
+	justify-content: space-between;
+}
+
+.invite .tab .tabli {
+	height: 0.7rem;
+}
+
+.invite .tab .pitch {
+	color: #005FD5;
+	border-bottom: 5px solid #005FD5;
+}
+
+
+.invite .content_a {
+	padding: 0.8rem 2.5rem;
+	display: none;
+}
+
+.invite .pitchon {
+	display: block;
+}
+
+.invite .content_a .container {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.invite .content_a .container .nape {
+	margin-right: 0.3rem;
+	margin-bottom: 0.3rem;
+	width: 30%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.24rem;
+	background-color: #FFFFFF;
+	border: 1px solid #AAAAAA;
+	background-image: url(../img/righthuise.png);
+	background-repeat: no-repeat;
+	background-size: 0.3rem;
+	background-position: 90% center;
+}
+
+.invite .content_a .container .nape:hover {
+	border: 1px solid #005FD5;
+	background-image: url(../img/right.png);
+}
+
+.develop {
+	padding-top: 1rem;
+	background-color: #F7F7F7;
+}
+
+.develop>h3 {
+	text-align: center;
+	font-size: 0.48rem;
+	font-weight: bold;
+	color: #005FD5;
+}
+
+.develop .box_e {
+	padding: 0.5rem 1rem 1rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.develop .box_e .plan_a {
+	width: 4rem;
+	height: 4rem;
+	background-image: url(../img/training.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 80%;
+	color: #005FD5;
+	position: relative;
+	font-size: 0.18rem;
+	font-weight: bold;
+}
+
+.develop .box_e .plan_a p:nth-child(1) {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.develop .box_e .plan_a p:nth-child(2) {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.develop .box_e .plan_a p:nth-child(3) {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.develop .box_e .plan_a p:nth-child(4) {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.develop .box_e .plan_a p:nth-child(5) {
+	position: absolute;
+	left: 42%;
+	top: 45%;
+}
+
+.plan {
+	padding: 1rem 3rem;
+	background-color: #0852a0;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+.plan .plan_b {
+	width: 40%;
+	padding-bottom: 1rem;
+}
+
+.plan .plan_b .plan_img {
+	padding: 0.5rem;
+	font-size: 0.36rem;
+	font-weight: bold;
+	background-image: url(../img/circle-1.png);
+	background-repeat: no-repeat;
+	background-size: 20%;
+	background-position: 0.2rem;
+	
+}
+
+.plan .plan_b>p {
+	padding: 0 0.5rem;
+	font-size: 0.18rem;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 6;
+	-webkit-box-orient: vertical;
+}
+
+.train {
+	position: relative;
+}
+.train .plan_text{
+	position: absolute;
+	top: 45%;
+	left: 42%;
+	color: #FFFFFF;
+	font-size: 0.48rem;
+	font-weight: bold;
+	text-align: center;
+}
+.train .plan_text p{
+	font-size: 0.12rem;
+	text-align: center;
+}
+.footer_xy{
+	margin-top: 0;
+}
+
+
+/* ===================================================================== */
+
+@media screen and (max-width:750px) {
+	.welfare .weal {
+		padding-top: 0.5rem;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.welfare .weal>li {
+		width: 20%;
+		height: 2rem;
+		text-align: center;
+		font-size: 0.12rem;
+	}
+
+	.culture {
+		padding: 0.5rem 2rem;
+		background-color: #F7F7F7;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.culture .item {
+		margin-bottom: 0.4rem;
+		background-color: #FFFFFF;
+		background-image: url(../img/acti-1.png);
+		background-repeat: no-repeat;
+		background-size: 95%;
+		background-position: top center;
+		width: 50%;
+		box-sizing: border-box;
+		padding: 4.4rem 0.2rem 0.2rem;
+		display: flex;
+		justify-content: space-between;
+		font-size: 0.28rem;
+	}
+
+	.culture .item .eye {
+		width: 0.34rem;
+		height: 0.26rem;
+	}
+	.plan {
+		padding: 1rem 1rem;
+		
+	}
+	.train .plan_b {
+		padding-bottom: 2rem;
+	}
+	.plan .plan_b .plan_img {
+		background-position: 0.1rem;
+	}
+	.train .plan_text {
+		font-size: 0.96rem;
+		left: 38%;
+		top: 40%;
+	}
+}
