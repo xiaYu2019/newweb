@@ -136,6 +136,13 @@ body {
 	display: block;
 }
 
+body::-webkit-scrollbar{
+	width: 2px;
+}
+body::-webkit-scrollbar-thumb{
+	border-radius: 1px;
+	background-image: linear-gradient(#ff0000,#ff7f00,#ffff00,#00ff00,#00ffff,#0000ff,#8b00ff);
+}
 @media screen and (max-width:750px) {
 	.box_xy {
 		height: 1.46rem;

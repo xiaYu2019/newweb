@@ -8,6 +8,7 @@ window.onresize = function(){
 	let html = document.documentElement;
 	let width = html.getBoundingClientRect().width;
 	html.style.fontSize =  width*100/1920+"px";
+	console.log(1)
 }
 
 // tab切换
@@ -30,11 +31,16 @@ let nape = document.getElementsByClassName("nape"); 		//获取点击位置
 let popups = document.getElementsByClassName("popups")[0]; 		//弹出层
 for(let a = 0 ; a<nape.length;a++){
 	nape[a].onclick = function(){
-		console.log(popups)
+		let pageHeigth = document.documentElement.clientHeight;
+		document.body.style.overflow = "hidden";
+		popups.style.height = pageHeigth + "px";
+		
+		console.log(pageHeigth)
 		popups.style.display="block";
 	}
 }
 popups.onclick = function(){
+	document.body.style.overflow = "visible";
 	popups.style.display = "none";
 }
 
