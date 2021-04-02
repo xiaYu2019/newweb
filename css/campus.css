@@ -72,7 +72,8 @@
 	padding: 2.2rem 0.1rem 0.1rem;
 	display: flex;
 	justify-content: space-between;
-	font-size: 0.14rem;
+	align-items: center;
+
 }
 
 .culture .item .eye {
@@ -144,6 +145,59 @@
 	border: 1px solid #005FD5;
 	background-image: url(../img/right.png);
 }
+.popups{
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	height: 10rem;
+	background-color: rgba(0,0,0,0.4);
+}
+.popups .vessel{
+	box-sizing: border-box;
+	margin: 1.5rem auto;
+	border-radius: 0.05rem;
+	width: 9rem;
+	background-color: #FFFFFF;
+	padding: 0.5rem 0.5rem 1rem 1rem;
+	text-align: right;
+}
+.popups .vessel>img{
+	width: 0.2rem;
+	height: 0.2rem;
+}
+.popups .vessel>h3{
+	font-size: 0.36rem;
+	font-weight: bold;
+	text-align: center;
+	color: #005FD5;
+}
+.popups .vessel>h6{
+	padding-top: 0.2rem;
+	font-size: 0.24rem;
+	text-align: left;
+	color: #005FD5;
+	text-decoration:underline;
+}
+.popups .vessel>ul{
+	padding-left: 0.2rem;
+	padding-top: 0.3rem;
+	font-size: 0.16rem;
+	text-align: left;
+	list-style:decimal;
+}
+.popups .vessel .send{
+	margin-top: 0.5rem;
+	width: 2rem;
+	height: 0.5rem;
+	background-color: #005FD5;
+	text-align: center;
+	line-height: 0.5rem;
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	border-radius: 0.05rem;
+}
 
 .develop {
 	padding-top: 1rem;
@@ -164,8 +218,8 @@
 }
 
 .develop .box_e .plan_a {
-	width: 4rem;
-	height: 4rem;
+	width: 4.5rem;
+	height: 4.5rem;
 	background-image: url(../img/training.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -176,46 +230,42 @@
 	font-weight: bold;
 }
 
-.develop .box_e .plan_a p:nth-child(1) {
-	position: absolute;
-	left: 0;
-	top: 0;
+.develop .box_e .plan_a .plan_up {
+	height: 25%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.develop .box_e .plan_a p:nth-child(2) {
-	position: absolute;
-	right: 0;
-	top: 0;
+.develop .box_e .plan_a .plan_centre {
+	height: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.develop .box_e .plan_a .plan_below{
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 15%;
 }
 
-.develop .box_e .plan_a p:nth-child(3) {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-
-.develop .box_e .plan_a p:nth-child(4) {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-
-.develop .box_e .plan_a p:nth-child(5) {
-	position: absolute;
-	left: 42%;
-	top: 45%;
-}
 
 .plan {
 	padding: 1rem 3rem;
 	background-color: #0852a0;
 	color: #FFFFFF;
+}
+.plan .plan_up,
+.plan .plan_below{
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 }
-
-
+.plan .plan_centre{
+	text-align: center;
+}
+.plan .plan_centre>p:nth-child(1){
+	font-size: 0.48rem;
+}
 .plan .plan_b {
 	width: 40%;
 	padding-bottom: 1rem;
@@ -229,7 +279,7 @@
 	background-repeat: no-repeat;
 	background-size: 20%;
 	background-position: 0.2rem;
-	
+
 }
 
 .plan .plan_b>p {
@@ -242,23 +292,12 @@
 	-webkit-box-orient: vertical;
 }
 
-.train {
-	position: relative;
-}
-.train .plan_text{
-	position: absolute;
-	top: 45%;
-	left: 42%;
-	color: #FFFFFF;
-	font-size: 0.48rem;
-	font-weight: bold;
-	text-align: center;
-}
-.train .plan_text p{
+.train .plan_text p {
 	font-size: 0.12rem;
 	text-align: center;
 }
-.footer_xy{
+
+.footer_xy {
 	margin-top: 0;
 }
 
@@ -307,19 +346,36 @@
 		width: 0.34rem;
 		height: 0.26rem;
 	}
+
 	.plan {
 		padding: 1rem 1rem;
-		
+
 	}
+
 	.train .plan_b {
 		padding-bottom: 2rem;
 	}
+
 	.plan .plan_b .plan_img {
 		background-position: 0.1rem;
 	}
+	.plan .plan_centre>p:nth-child(1){
+		font-size: 1rem;
+	}
+
 	.train .plan_text {
 		font-size: 0.96rem;
 		left: 38%;
 		top: 40%;
+	}
+	/* ===================== */
+	.develop .box_e{
+		flex-direction: column;
+		align-items: center;
+	}
+	.develop .box_e .plan_a{
+		width: 8rem;
+		height: 8rem;
+		margin-bottom: 1rem;
 	}
 }

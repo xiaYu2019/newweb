@@ -1,13 +1,14 @@
-body{
+body {
 	background-color: #F7F7F7;
 }
+
 .frame_xy {
 	width: 100%;
 	font-size: 0.24rem;
 	color: white;
 	background-color: #005fd5;
 	position: fixed;
-	 z-index: 999;
+	z-index: 999;
 }
 
 .box_xy {
@@ -32,7 +33,7 @@ body{
 	font: 0;
 	line-height: 100%;
 	font-size: 0;
-	vertical-align:middle;
+	vertical-align: middle;
 }
 
 .box_xy .nav_xy {
@@ -76,7 +77,6 @@ body{
 	position: absolute;
 	left: 0;
 	width: 100%;
-	height: 0.7rem;
 	transition: all 0.3s;
 }
 
@@ -105,7 +105,7 @@ body{
 	color: #005FD5
 }
 
-.box_xy .eWeChat_xy{
+.box_xy .eWeChat_xy {
 	width: 0.5rem;
 	background-image: url(../img/d9b6fc5.png);
 	background-repeat: no-repeat;
@@ -113,7 +113,8 @@ body{
 	background-size: contain;
 	position: relative;
 }
-.box_xy .eWeChat_xy>.code{
+
+.box_xy .eWeChat_xy>.code {
 	position: absolute;
 	top: 88%;
 	left: -0.75rem;
@@ -130,6 +131,22 @@ body{
 	text-align: center;
 	display: none;
 }
-.box_xy .eWeChat_xy:hover .code{
+
+.box_xy .eWeChat_xy:hover .code {
 	display: block;
+}
+
+@media screen and (max-width:750px) {
+	.box_xy {
+		height: 1.46rem;
+	}
+
+	.box_xy .log_xy {
+		height: 100%;
+		line-height: 1.46rem
+	}
+
+	.box_xy .nav_xy {
+		line-height: 1.46rem
+	}
 }

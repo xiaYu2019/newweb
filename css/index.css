@@ -135,18 +135,11 @@ header .video>div>img {
 	margin-top: 1.5rem;
 	color: white;
 	font-size: 0.18rem;
-}
-
-@media screen and (max-width:750px) {
-	.center .plate_a .nape .brief p {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-
-	.center .plate_a .advantage {
-		flex-wrap: wrap;
-	}
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
 }
 
 .center .plate_a .advantage {
@@ -251,4 +244,35 @@ header .video>div>img {
 .center .plate_b button:hover {
 	background-color: #005FD5;
 	color: white;
+}
+
+@media screen and (max-width:750px) {
+	.center .plate_a .nape {
+		flex-wrap: wrap;
+	}
+
+	.center .plate_a .nape .brief {
+		width: 50%;
+	}
+
+	.center .plate_a .nape .brief .container {
+		padding: 1rem 1rem 0;
+	}
+	.center .plate_a .nape .brief p{
+		margin-top: 0.5rem;
+		-webkit-line-clamp: 3;
+	}
+	.center .plate_a .advantage{
+		flex-wrap: wrap;
+		justify-content:flex-start;
+		padding-left:2rem ;
+	}
+	.center .plate_a .advantage .kind{
+		margin-bottom: 1rem;
+		margin-right: 1rem;
+		width: 40%;
+		
+	}
+	.center .plate_a .advantage .kind:nth-child(3){
+	}
 }

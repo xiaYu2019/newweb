@@ -10,6 +10,7 @@ window.onresize = function(){
 	html.style.fontSize =  width*100/1920+"px";
 }
 
+// tab切换
 let tab = document.getElementsByClassName("tabli");
 let content = document.getElementsByClassName("content_a");
 let i = 0 ;
@@ -22,3 +23,19 @@ for(let a = 0 ;a<tab.length;a++){
 		i = a;
 	}
 }
+
+//弹出层控制
+
+let nape = document.getElementsByClassName("nape"); 		//获取点击位置	
+let popups = document.getElementsByClassName("popups")[0]; 		//弹出层
+for(let a = 0 ; a<nape.length;a++){
+	nape[a].onclick = function(){
+		console.log(popups)
+		popups.style.display="block";
+	}
+}
+popups.onclick = function(){
+	popups.style.display = "none";
+}
+
+
